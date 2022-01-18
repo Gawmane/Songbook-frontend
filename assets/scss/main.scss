@@ -1,3 +1,100 @@
-@import "helpers/variabler";
-@import "helpers/animation";
-@import "helpers/mixin";
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #A4C4B5;
+    li {
+        display: inline;
+        padding: 50px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}
+
+#listSong {
+    a {
+        cursor: pointer;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #A4C4B5;
+            color: white;
+        }
+        .edit {
+            padding: 3em;
+        }
+        //Style af knapper
+        button {
+            // margin-left: 20px;
+            background-color: #A4C4B5;
+            font-family: 'Road Rage', cursive;
+            display: inline;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 5px 35px;
+            // margin-top: 3em;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                color: #A4C4B5;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.modal {
+    width: 100%;
+    height: 2000vh;
+    border: solid 1px #000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3%;
+    background-color: #A4C4B5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+    button {
+        width: 20%;
+        display: inline;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            color: #000;
+            background-color: #fff;
+        }
+    }
+}
+
+.active {
+    display: block;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="assets/js/comments.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Opret sang</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Liste over sange</a></li>
+                    <li><a href="createSong.html">Opret sang</a></li>
+                </ul>
+                <!-- Søgefunktion - sang og indhold - Se antal hits -->
+                <input id="searchbar" type="text" name="search" placeholder="Søg efter sang">
+            </nav>
+        </header>
+
+        <section id="createForm">
+            <h1>Opret din sang her</h1>
+            <form method="post">
+
+                <input type="hidden" name="active" value="1">
+
+                <!-- Vælg sang title -->
+                <label for="title">Title på sangen</label>
+                <input type="text" name="title" id="title">
+
+                <!-- Vælg artist fra listen -->
+                <label for="artist">Vælg artist</label>
+                <select name="artist" id="selectArtist">
+                    
+                  </select>
+                <label for="content">Tilføj sangens tekst</label>
+                <textarea name="content" id="content"> </textarea>
+
+                <button type="button" id="send">Gem</button>
+
+            </form>
+        </section>
+        <footer></footer>
+    </main>
+</body>
